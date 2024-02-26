@@ -89,6 +89,7 @@ label {
   border-radius: 5px;
   border: 1px solid var(--neutral-color-400);
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .container-text button {
@@ -99,13 +100,20 @@ label {
   background-color: var(--neutral-color-800);
   color: var(--neutral-color-100);
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  background-color: var(--primary-color);
+  box-shadow: 1px 2px 10px var(--primary-color);
 }
 
 .success-container {
   display: none;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   body {
     display: flex;
     flex-direction: column;
@@ -114,7 +122,7 @@ label {
     justify-content: center;
   }
   .sign-up-container {
-    width: 700px;
+    width: 900px;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -125,5 +133,10 @@ label {
   .container-text {
     grid-column-start: 1;
     grid-row-start: 1;
+    margin-top: 75px;
+  }
+
+  .container-text h1 {
+    font-size: 3rem;
   }
 }
