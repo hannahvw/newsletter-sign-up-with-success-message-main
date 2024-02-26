@@ -25,7 +25,14 @@
   <body>
     <!-- Sign-up form start -->
     <div class="sign-up-container">
-      <img src="assets/images/illustration-sign-up-mobile.svg" alt="" />
+      <picture>
+        <source
+          srcset="assets/images/illustration-sign-up-mobile.svg"
+          media="(max-width: 600px)"
+          alt=""
+        />
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="" />
+      </picture>
       <div class="container-text">
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
