@@ -45,7 +45,11 @@ img {
   background-color: var(--color-100);
   margin-bottom: 20px;
   color: var(--color-800);
-  height: 100vh;
+  max-height: 100vh;
+}
+
+.hidden {
+  display: none;
 }
 
 .sign-up-text {
@@ -123,7 +127,7 @@ img {
   background-color: var(--color-100);
   margin-bottom: 20px;
   color: var(--color-800);
-  height: 100vh;
+  max-height: 100vh;
 }
 
 .success-message-container h1 {
@@ -173,7 +177,6 @@ img {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
     grid-gap: 25px;
-    display: none;
   }
 
   .sign-up-container .container-image {
