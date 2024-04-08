@@ -92,6 +92,16 @@ body {
   padding-left: 20px;
   border: 1px solid var(--color-400);
   color: var(--color-400);
+  font-size: 1rem;
+}
+
+#email:focus {
+  color: var(--color-800);
+  outline: 1px solid var(--color-600);
+}
+
+#email:hover {
+  cursor: pointer;
 }
 
 #sign-up-button {
@@ -100,6 +110,7 @@ body {
   color: var(--color-100);
   font-weight: 400;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .hidden {
@@ -134,4 +145,10 @@ body {
   border-radius: 10px;
   position: relative;
   bottom: -230px;
+  cursor: pointer;
+}
+
+.success-message-container button:hover, #sign-up-button:hover {
+  background-color: var(--color-primary);
+  box-shadow: 2px 2px 15px var(--color-primary);
 }
