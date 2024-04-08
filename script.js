@@ -2,7 +2,9 @@ const signUpBtn = document.querySelector("#sign-up-button");
 const dismissBtn = document.querySelector("#dismiss-button");
 const signUpPage = document.querySelector(".sign-up-container");
 const successPage = document.querySelector(".success-message-container");
+const userEmail = document.querySelector("#email");
 
+console.log(userEmail.value);
 function subscribe() {
   // signUpPage.setAttribute("class", "hidden");
   // successPage.removeAttribute("class", "hidden");
