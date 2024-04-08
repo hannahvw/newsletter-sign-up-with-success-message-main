@@ -1,2 +1,46 @@
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(228, 87%, 76%);
+}
+.attribution a {
+  color: hsl(228, 84%, 78%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: hsl(4, 100%, 67%);
+  --color-800: hsl(234, 29%, 20%);
+  --color-600: hsl(235, 18%, 26%);
+  --color-400: hsl(231, 7%, 60%);
+  --color-100: hsl(0, 0%, 100%);
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--color-800);
+}
+
+.container {
+  max-width: 375px;
+  background-color: var(--color-100);
+  margin-bottom: 20px;;
+}
+
+
+.hidden {
+  display: none;
+}
