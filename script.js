@@ -6,11 +6,10 @@ const userEmail = document.querySelector("#email");
 const confirmEmail = document.querySelector("#user-email");
 const errorMsg = document.querySelector("#error-msg");
 
-console.log(userEmail.value);
 function subscribe(event) {
   event.preventDefault();
-  // signUpPage.setAttribute("class", "hidden");
-  // successPage.removeAttribute("class", "hidden");
+  //signUpPage.setAttribute("class", "hidden");
+  //successPage.removeAttribute("class", "hidden");
   signUpPage.style.display = "none";
   successPage.style.display = "block";
 
@@ -26,8 +25,8 @@ function subscribe(event) {
 }
 
 function dismiss() {
-  // successPage.setAttribute("class", "hidden");
-  //  signUpPage.removeAttribute("class", "hidden");
+  //successPage.setAttribute("class", "hidden");
+  // signUpPage.removeAttribute("class", "hidden");
   successPage.style.display = "none";
   signUpPage.style.display = "block";
 }

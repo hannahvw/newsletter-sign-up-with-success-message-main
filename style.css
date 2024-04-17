@@ -118,7 +118,7 @@ img {
 
 #email.error {
   border: 2px solid var(--color-primary);
-  background-color: #FFE8E6;
+  background-color: #ffe8e6;
 }
 
 .error::placeholder {
@@ -168,7 +168,6 @@ img {
   height: 50px;
   margin: 180px 0 15px;
   border-radius: 10px;
-
   cursor: pointer;
 }
 
@@ -231,6 +230,6 @@ img {
   }
 
   .success-message-container button {
-    bottom: -25px;
+    margin: 50px 0 15px;
   }
 }
