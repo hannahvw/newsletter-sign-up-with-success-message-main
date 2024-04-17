@@ -10,16 +10,16 @@ function subscribe(event) {
   event.preventDefault();
   //signUpPage.setAttribute("class", "hidden");
   //successPage.removeAttribute("class", "hidden");
-  signUpPage.style.display = "none";
-  successPage.style.display = "block";
 
   if (userEmail.value.includes("@")) {
     confirmEmail.textContent = userEmail.value;
     errorMsg.style.display = "none";
     userEmail.value = "";
     userEmail.removeAttribute("class", "error");
+    signUpPage.style.display = "none";
+    successPage.style.display = "grid";
   } else {
-    errorMsg.style.display = "block";
+    errorMsg.style.display = "grid";
     userEmail.setAttribute("class", "error");
   }
 }
@@ -28,7 +28,7 @@ function dismiss() {
   //successPage.setAttribute("class", "hidden");
   // signUpPage.removeAttribute("class", "hidden");
   successPage.style.display = "none";
-  signUpPage.style.display = "block";
+  signUpPage.style.display = "grid";
 }
 
 signUpBtn.addEventListener("click", subscribe);
