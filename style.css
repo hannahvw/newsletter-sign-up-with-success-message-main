@@ -82,6 +82,9 @@ img {
 .sign-up-text form label {
   font-size: 0.75rem;
   font-weight: 700;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sign-up-text form input {
@@ -106,6 +109,20 @@ img {
 
 #email:hover {
   cursor: pointer;
+}
+
+#error-msg {
+  color: var(--color-primary);
+  display: none;
+}
+
+#email.error {
+  border: 2px solid var(--color-primary);
+  background-color: #FFE8E6;
+}
+
+.error::placeholder {
+  color: var(--color-primary);
 }
 
 #sign-up-button {
@@ -151,7 +168,7 @@ img {
   height: 50px;
   margin: 180px 0 15px;
   border-radius: 10px;
-  
+
   cursor: pointer;
 }
 

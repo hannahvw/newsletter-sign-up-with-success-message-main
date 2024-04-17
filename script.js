@@ -4,6 +4,7 @@ const signUpPage = document.querySelector(".sign-up-container");
 const successPage = document.querySelector(".success-message-container");
 const userEmail = document.querySelector("#email");
 const confirmEmail = document.querySelector("#user-email");
+const errorMsg = document.querySelector("#error-msg");
 
 console.log(userEmail.value);
 function subscribe(event) {
@@ -12,7 +13,16 @@ function subscribe(event) {
   // successPage.removeAttribute("class", "hidden");
   signUpPage.style.display = "none";
   successPage.style.display = "block";
-  confirmEmail.textContent = userEmail.value;
+
+  if (userEmail.value.includes("@")) {
+    confirmEmail.textContent = userEmail.value;
+    errorMsg.style.display = "none";
+    userEmail.value = "";
+    userEmail.removeAttribute("class", "error");
+  } else {
+    errorMsg.style.display = "block";
+    userEmail.setAttribute("class", "error");
+  }
 }
 
 function dismiss() {
