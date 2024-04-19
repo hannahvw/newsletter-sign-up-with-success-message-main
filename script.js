@@ -8,14 +8,14 @@ const errorMsg = document.querySelector("#error-msg");
 
 function subscribe(event) {
   event.preventDefault();
-  //signUpPage.setAttribute("class", "hidden");
-  //successPage.removeAttribute("class", "hidden");
 
   if (userEmail.value.includes("@")) {
     confirmEmail.textContent = userEmail.value;
     errorMsg.style.display = "none";
     userEmail.value = "";
     userEmail.removeAttribute("class", "error");
+    //signUpPage.setAttribute("class", "hidden");
+    //successPage.removeAttribute("class", "hidden");
     signUpPage.style.display = "none";
     successPage.style.display = "grid";
   } else {
